@@ -45,6 +45,10 @@
   <ItemGroup>
     <Compile Include="Address.cs" />
     <Compile Include="ChekInPerson.cs" />
+    <Compile Include="Figures\Circle.cs" />
+    <Compile Include="Figures\Figure.cs" />
+    <Compile Include="Figures\Rectangle.cs" />
+    <Compile Include="Figures\Triangle.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
