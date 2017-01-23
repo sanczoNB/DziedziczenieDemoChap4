@@ -4,14 +4,14 @@ using DziedziczenieDemo.Figures;
 
 namespace DziedziczenieDemo
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            List<Figure> figures = new List<Figure>()
+            var figures = new List<Figure>()
             {
                 new Circle(),
-                new Triangle(),
+                new Triangle("Co się z tobą stanie, gdy Ci ufać przestane!!!"),
                 new Rectangle(),
                 new Square()
             };
