@@ -7,6 +7,6 @@
             return 4;
         }
 
-        public override int VertexNumber { get { return HowManyVertexs(); } }
+        
     }
 }

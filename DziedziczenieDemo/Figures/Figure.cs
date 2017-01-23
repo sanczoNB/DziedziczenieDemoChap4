@@ -4,6 +4,6 @@
     {
         public abstract int HowManyVertexs();
 
-        public abstract int VertexNumber { get; }
+        public virtual int VertexsNumber { get { return HowManyVertexs(); } }
     }
 }
