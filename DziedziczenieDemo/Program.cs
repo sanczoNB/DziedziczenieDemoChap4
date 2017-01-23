@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using DziedziczenieDemo.Figures;
 
 namespace DziedziczenieDemo
 {
@@ -6,24 +8,18 @@ namespace DziedziczenieDemo
     {
         static void Main(string[] args)
         {
-            var jk = new ChekInPerson
+            List<Figure> figures = new List<Figure>()
             {
-                Name = "Jan",
-                Surname = "Kowalski",
-                Age = 42,
-                ChekInAddress = new Address
-                {
-                    City = "Toruń",
-                    Street = "Grudziądzka",
-                    HouseNumber = 5,
-                    ApartmentNumber = 7
-                }
+                new Circle(),
+                new Triangle(),
+                new Rectangle(),
+                new Square()
             };
+            foreach (var figure in figures)
+            {
+                Console.WriteLine("Figura {0} ma {1} wierzchołków.", figure.GetType().Name, figure.HowManyVertexs());
+            }
 
-            Console.WriteLine(jk.ToString());
-
-            Person jkp = jk;
-            Console.WriteLine(jkp.ToString());
             Console.ReadKey();
         }
     }
