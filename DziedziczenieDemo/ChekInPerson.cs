@@ -4,7 +4,7 @@
     {
         public Address ChekInAddress;
 
-        public override string ToString()
+        public new string ToString()
         {
             return $"{base.ToString()}; {ChekInAddress.ToString()}";
         }
